@@ -1,4 +1,4 @@
-package com.alignme
+package com.cotaballineup
 
 import android.app.Application
 import com.facebook.react.PackageList
