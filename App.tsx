@@ -37,7 +37,7 @@ function HomeScreen({ navigation }: any) {
       resizeMode="contain"
     />
     <Text variant="headlineLarge" style={AppStyles.title}>
-      AlignMe
+      COTABAL LINE UP
     </Text>
 
     {/* Botones con estilo tipo "liga" (sin icono ni subtítulo) - estilizados desde AppStyles */}
