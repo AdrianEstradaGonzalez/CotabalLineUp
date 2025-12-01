@@ -1,6 +1,7 @@
 import React from "react";
 import { View, TouchableOpacity, Image } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import AppTheme from "../styles/theme";
 
 type NavBarBackProps = {
   onBack: () => void;
@@ -22,7 +23,7 @@ export default function NavBarBack({ onBack, isLeft }: NavBarBackProps) {
         paddingTop: insets.top + 10,
         paddingBottom: 10,
         paddingHorizontal: 20,
-        backgroundColor: "#3b82f6",
+        backgroundColor: AppTheme.primaryLight,
         shadowColor: "#000",
         shadowOffset: { width: 0, height: 1 },
         shadowOpacity: 0.15,

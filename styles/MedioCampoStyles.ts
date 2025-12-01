@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from "react-native";
+import { AppTheme } from "./theme";
 
 const { width, height } = Dimensions.get("window");
 
@@ -16,7 +17,7 @@ const posicionSize = Math.min(campoSize * 0.28, 100) * smallFactor;
 export const MedioCampoStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f9fafc",
+    backgroundColor: AppTheme.background,
     alignItems: "center",
     justifyContent: "center",
     padding: 12 * smallFactor,
@@ -26,9 +27,9 @@ export const MedioCampoStyles = StyleSheet.create({
     width: campoSize,
     padding: 8 * smallFactor,
     borderRadius: 10 * smallFactor,
-    backgroundColor: "#F5A623AA",
+    backgroundColor: AppTheme.accent,
     borderWidth: 1.5 * smallFactor,
-    borderColor: "#D17F1A",
+    borderColor: AppTheme.accentDark,
     marginBottom: 8 * smallFactor,
     alignItems: "center",
     maxWidth: 420,
@@ -36,21 +37,21 @@ export const MedioCampoStyles = StyleSheet.create({
   tituloPrincipal: {
     fontSize: Math.min(18 * scale * smallFactor, 20),
     fontWeight: "bold",
-    color: "#000",
+    color: AppTheme.textPrimary,
   },
   tituloSecundario: {
     fontSize: Math.min(14 * scale * smallFactor, 16),
-    color: "#000",
+    color: AppTheme.textPrimary,
     marginTop: 4 * smallFactor,
   },
 
   campo: {
     width: campoSize,
     aspectRatio: 1,
-    backgroundColor: "#ffedd5",
+    backgroundColor: AppTheme.fieldBackground,
     borderRadius: 14 * smallFactor,
     borderWidth: 2,
-    borderColor: "#fb923c",
+    borderColor: AppTheme.fieldBorder,
     justifyContent: "space-around",
     paddingVertical: 8 * smallFactor,
     marginVertical: 8 * smallFactor,
@@ -72,7 +73,7 @@ export const MedioCampoStyles = StyleSheet.create({
 
   lineaSeparadora: {
     height: 2 * smallFactor,
-    backgroundColor: "#fb923c",
+    backgroundColor: AppTheme.fieldLine,
     width: "90%",
     alignSelf: "center",
   },
@@ -83,22 +84,22 @@ export const MedioCampoStyles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 2,
-    borderColor: "#fb923c",
+    borderColor: AppTheme.fieldBorder,
     borderRadius: 10 * smallFactor,
-    backgroundColor: "#fff",
+    backgroundColor: AppTheme.surface,
     elevation: 2,
   },
 
   input: {
     fontSize: Math.min(posicionSize * 0.18, 18) * smallFactor,
-    color: "#111",
+    color: AppTheme.textPrimary,
   },
 
   label: {
     fontSize: Math.min(posicionSize * 0.16, 16) * smallFactor,
     fontWeight: "600",
     marginBottom: 4 * smallFactor,
-    color: "#374151",
+    color: AppTheme.textSecondary,
   },
 
   labelEquipo: {
@@ -108,13 +109,13 @@ export const MedioCampoStyles = StyleSheet.create({
   textoEquipo: {
     fontSize: Math.min(14 * scale * smallFactor, 16),
     fontWeight: "bold",
-    color: "#000",
-    backgroundColor: "#fde047",
+    color: AppTheme.textPrimary,
+    backgroundColor: AppTheme.accent,
     paddingHorizontal: 8 * smallFactor,
     paddingVertical: 3 * smallFactor,
     borderRadius: 6 * smallFactor,
     borderWidth: 1,
-    borderColor: "#d97706",
+    borderColor: AppTheme.accentDark,
   },
 
   labelCodigo: {
@@ -124,19 +125,19 @@ export const MedioCampoStyles = StyleSheet.create({
   textoCodigo: {
     fontSize: Math.min(14 * scale * smallFactor, 16),
     fontWeight: "bold",
-    color: "#000",
-    backgroundColor: "#fff176",
+    color: AppTheme.textPrimary,
+    backgroundColor: AppTheme.accent,
     paddingHorizontal: 6 * smallFactor,
     paddingVertical: 2 * smallFactor,
     borderRadius: 5 * smallFactor,
     borderWidth: 1,
-    borderColor: "#d97706",
+    borderColor: AppTheme.accentDark,
     minWidth: 36 * smallFactor,
     textAlign: "center",
   },
 
   qrButton: {
-    backgroundColor: "#fb923c",
+    backgroundColor: AppTheme.primaryLight,
     paddingVertical: 10 * smallFactor,
     alignItems: "center",
     justifyContent: "center",
@@ -147,7 +148,7 @@ export const MedioCampoStyles = StyleSheet.create({
     alignSelf: "center",
   },
   qrButtonText: {
-    color: "#fff",
+    color: AppTheme.textOnPrimary,
     fontSize: Math.min(14 * scale * smallFactor, 16),
     fontWeight: "bold",
     textAlign: "center",

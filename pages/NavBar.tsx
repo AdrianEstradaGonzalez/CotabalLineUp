@@ -2,6 +2,7 @@ import React from "react";
 import { View, TouchableOpacity, Text, Image } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useNavigation } from "@react-navigation/native";
+import AppTheme from "../styles/theme";
 
 type NavBarProps = {
   modo: "6x6" | "4x4";
@@ -27,7 +28,7 @@ export default function NavBar({ modo, toggleModo }: NavBarProps) {
         paddingHorizontal: 20,
         paddingTop: insets.top + 10,
         paddingBottom: 10,
-        backgroundColor: "#3b82f6",
+        backgroundColor: AppTheme.primaryLight,
         shadowColor: "#000",
         shadowOffset: { width: 0, height: 1 },
         shadowOpacity: 0.15,

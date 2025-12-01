@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions, Platform } from "react-native";
+import { AppTheme } from "./theme";
 
 const { width, height } = Dimensions.get("window");
 const scaleHeight = height / 800;
@@ -17,14 +18,12 @@ export const AppStyles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     paddingHorizontal: 20,
-    backgroundColor: "rgba(15, 23, 42, 0.55)",
     minHeight: height, 
   },
 
   card: {
     width: width * 0.9,
     maxHeight: height * 0.85,
-    backgroundColor: "#ffffff",
     borderRadius: 28,
     paddingVertical: 20 * scaleHeight,
     paddingHorizontal: 20,
@@ -63,19 +62,19 @@ export const AppStyles = StyleSheet.create({
     fontSize: 28,
     textAlign: "center",
     marginBottom: 16,
-    color: "#0f172a",
+    color: AppTheme.textPrimary,
     letterSpacing: 0.8,
     lineHeight: 32,
   },
 
   button: {
     borderRadius: 16,
-    backgroundColor: "#7c3aed",
+    backgroundColor: AppTheme.buttonPrimary,
     marginVertical: 6,
     minWidth: "100%",
     paddingVertical: 12,
 
-    shadowColor: "#7c3aed",
+    shadowColor: AppTheme.buttonPrimary,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.25,
     shadowRadius: 6,
@@ -97,7 +96,7 @@ export const AppStyles = StyleSheet.create({
     bottom: 30,
     alignSelf: "center",
     fontSize: 11,
-    color: "#e2e8f0",
+    color: AppTheme.textOnPrimary,
     opacity: 0.85,
     letterSpacing: 0.5,
   },
@@ -110,7 +109,7 @@ export const AppStyles = StyleSheet.create({
   },
 
   actionCard: {
-    backgroundColor: "#1d2841",
+    backgroundColor: AppTheme.actionCardBg,
     borderRadius: 16,
     overflow: "hidden",
     marginVertical: 8,
@@ -134,7 +133,7 @@ export const AppStyles = StyleSheet.create({
     top: 0,
     bottom: 0,
     width: 6,
-    backgroundColor: "#3b82f6",
+    backgroundColor: AppTheme.actionCardLeftBar,
     borderTopLeftRadius: 16,
     borderBottomLeftRadius: 16,
   },
@@ -147,18 +146,18 @@ export const AppStyles = StyleSheet.create({
     bottom: 0,
     borderRadius: 16,
     borderWidth: 1,
-    borderColor: "rgba(59,130,246,0.12)",
+    borderColor: AppTheme.actionCardBorderSubtle,
   },
 
   actionText: {
-    color: "#ffffff",
+    color: AppTheme.actionCardText,
     fontWeight: "800",
     fontSize: 18,
     
   },
 
   actionArrow: {
-    color: "#3b82f6",
+    color: AppTheme.actionCardArrow,
     fontSize: 26,
     fontWeight: "600",
   },

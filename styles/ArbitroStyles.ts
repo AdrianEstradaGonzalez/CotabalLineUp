@@ -1,4 +1,5 @@
 import { StyleSheet, Dimensions } from "react-native";
+import { AppTheme } from "./theme";
 
 const { width, height } = Dimensions.get("window");
 
@@ -30,7 +31,7 @@ const posicionSize = (campoSize - 32) / 4;
 export const ArbitroStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#f9fafb",
+    backgroundColor: AppTheme.background,
     alignItems: "center",
   },
 
@@ -44,10 +45,10 @@ export const ArbitroStyles = StyleSheet.create({
   campo: {
     width: campoSize,
     aspectRatio: 1,
-    backgroundColor: "#ffedd5",
+    backgroundColor: AppTheme.fieldBackground,
     borderRadius: 16 * scale,
     borderWidth: 2,
-    borderColor: "#fb923c",
+    borderColor: AppTheme.fieldBorder,
     justifyContent: "center",
     alignItems: "center",
     padding: 4 * scale,
@@ -64,11 +65,11 @@ export const ArbitroStyles = StyleSheet.create({
   red: {
   width: 6 * scale,               // 👉 más gruesa para consistencia
   alignSelf: "stretch",
-  backgroundColor: "#000",
+  backgroundColor: AppTheme.fieldLine,
   marginHorizontal: 6 * scale,    // 👉 más separación entre los lados
   borderRadius: 2 * scale,        // 👉 bordes redondeados para un look más limpio
   elevation: 3,                   // 👉 pequeña sombra en Android
-  shadowColor: "#000",            // 👉 pequeña sombra en iOS
+  shadowColor: AppTheme.shadow,            // 👉 pequeña sombra en iOS
   shadowOffset: { width: 0, height: 1 },
   shadowOpacity: 0.15,
   shadowRadius: 1.5,
@@ -87,11 +88,11 @@ columna: {
     height: posicionSize,
     marginVertical: 2 * scale,
     borderWidth: 2,
-    borderColor: "#fb923c",
+    borderColor: AppTheme.fieldBorder,
     borderRadius: 8 * scale,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#fff",
+    backgroundColor: AppTheme.surface,
     elevation: 2,
     paddingVertical: 4 * scale,
   },
@@ -99,21 +100,21 @@ columna: {
   posLabel: {
     fontSize: posicionSize * 0.18,
     fontWeight: "600",
-    color: "#374151",
+    color: AppTheme.textSecondary,
     marginBottom: 1 * scale,
   },
 
   divisor: {
     width: "80%",
     height: 1,
-    backgroundColor: "#d1d5db",
+    backgroundColor: AppTheme.divider,
     marginVertical: 1,
   },
 
   numLabel: {
     fontSize: posicionSize * 0.22,
     fontWeight: "bold",
-    color: "#111",
+    color: AppTheme.textPrimary,
     marginTop: 1,
   },
 
@@ -123,9 +124,9 @@ columna: {
     top: height * 0.015 * scale,
     zIndex: 20,
     padding: campoSize * 0.018,
-    backgroundColor: "#fb923c",
+    backgroundColor: AppTheme.buttonSecondary,
     borderRadius: campoSize * 0.06,
-    shadowColor: "#000",
+    shadowColor: AppTheme.shadow,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.15,
     shadowRadius: 2,
@@ -139,11 +140,11 @@ columna: {
     zIndex: 20,
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: "#fb923c",
+    backgroundColor: AppTheme.buttonSecondary,
     paddingHorizontal: width * 0.025 * scale,
     paddingVertical: height * 0.008 * scale,
     borderRadius: 10 * scale,
-    shadowColor: "#000",
+    shadowColor: AppTheme.shadow,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.15,
     shadowRadius: 2,
@@ -151,7 +152,7 @@ columna: {
   },
 
   modoText: {
-    color: "#fff",
+    color: AppTheme.textOnPrimary,
     fontWeight: "bold",
     fontSize: 12 * scale * smallFactor,
   },
@@ -162,7 +163,7 @@ columna: {
     alignItems: "center",
     width: campoSize,
     height: 40 * scale,
-    backgroundColor: "#fff",
+    backgroundColor: AppTheme.surface,
     borderRadius: 8 * scale,
     elevation: 2,
     paddingHorizontal: 4 * scale,
@@ -173,7 +174,7 @@ columna: {
     width: 30 * scale,
     height: 30 * scale,
     borderRadius: 6 * scale,
-    backgroundColor: "#3b82f6",
+    backgroundColor: AppTheme.primaryLight,
     justifyContent: "center",
     alignItems: "center",
   },
@@ -183,13 +184,13 @@ columna: {
     height: "85%",
     marginHorizontal: 4 * scale,
     borderRadius: 6 * scale,
-    backgroundColor: "#3b82f6",
+    backgroundColor: AppTheme.primaryLight,
     justifyContent: "center",
     alignItems: "center",
   },
 
   setText: {
-    color: "#fff",
+    color: AppTheme.textOnPrimary,
     fontWeight: "bold",
     fontSize: 14 * scale,
     textAlign: "center",
@@ -197,7 +198,7 @@ columna: {
 
   qrButton: {
     flex: 1,
-    backgroundColor: "#fb923c",
+    backgroundColor: AppTheme.primaryLight,
     paddingVertical: 10 * scale,
     alignItems: "center",
     justifyContent: "center",
@@ -231,7 +232,7 @@ columna: {
   },
 
   qrButtonText: {
-    color: "#fff",
+    color: AppTheme.textOnPrimary,
     fontSize: 12 * scale,
     fontWeight: "bold",
     textAlign: "center",
@@ -241,7 +242,7 @@ columna: {
   qrIcon: {
     width: 24 * scale,
     height: 24 * scale,
-    tintColor: "#fff",
+    tintColor: AppTheme.textOnPrimary,
     marginBottom: 4 * scale,
   },
 });

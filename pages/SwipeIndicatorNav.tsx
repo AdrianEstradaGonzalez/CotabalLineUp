@@ -1,4 +1,6 @@
 import { View, Image } from "react-native";
+import App from "../App";
+import AppTheme from "../styles/theme";
 
 const icons = {
   home: require("../assets/icons/home.png"), // la casita que ya usas
@@ -29,7 +31,7 @@ export default function SwipeIndicatorNav({ active }: Props) {
           width: 10,
           height: 10,
           borderRadius: 5,
-          backgroundColor: active === "left" ? "#f59e0b" : "#d1d5db",
+          backgroundColor: active === "left" ? AppTheme.primary : "#d1d5db",
           opacity: active === "left" ? 1 : 0.4,
         }}
       />
@@ -40,7 +42,7 @@ export default function SwipeIndicatorNav({ active }: Props) {
         style={{
           width: 18,
           height: 18,
-          tintColor: active === "center" ? "#f59e0b" : "#9ca3af",
+          tintColor: active === "center" ? AppTheme.primary : "#9ca3af",
           opacity: active === "center" ? 1 : 0.5,
         }}
       />
@@ -51,7 +53,7 @@ export default function SwipeIndicatorNav({ active }: Props) {
           width: 10,
           height: 10,
           borderRadius: 5,
-          backgroundColor: active === "right" ? "#f59e0b" : "#d1d5db",
+          backgroundColor: active === "right" ? AppTheme.primary : "#d1d5db",
           opacity: active === "right" ? 1 : 0.4,
         }}
       />
