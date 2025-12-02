@@ -34,7 +34,8 @@ export const AppStyles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     alignSelf: "center",
-    opacity: 0.95,
+    backgroundColor: "#ffffff",
+    opacity: 1,
 
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 10 },
