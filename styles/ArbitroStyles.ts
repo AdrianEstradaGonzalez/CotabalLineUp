@@ -157,6 +157,14 @@ columna: {
     fontSize: 12 * scale * smallFactor,
   },
 
+  logoLetras: {
+    alignSelf: "center",
+    width: Math.min(220, width * 0.6),
+    height: 80 * scale,
+    resizeMode: "contain",
+    marginVertical: 4 * scale,
+  },
+
   filaSets: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -167,7 +175,7 @@ columna: {
     borderRadius: 8 * scale,
     elevation: 2,
     paddingHorizontal: 4 * scale,
-    marginBottom: 25 * scale,
+    marginBottom: isSmallScreen ? 20 * scale : 26 * scale,
   },
 
   setButton: {

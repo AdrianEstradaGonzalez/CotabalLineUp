@@ -128,9 +128,14 @@ if ((modo === "6x6" && setActual === 5) || (modo === "4x4" && setActual === 3)) 
         }}
       />
 
+      {/* Logo letras entre la barra y los sets */}
+      <View style={{ width: "100%", alignItems: "center" }}>
+        <Image source={require("../assets/LOGO_LETRAS.png")} style={styles.logoLetras} />
+      </View>
+
 
       <ScrollView
-        contentContainerStyle={{ flexGrow: 1, justifyContent: "center" }}
+        contentContainerStyle={{ flexGrow: 1, justifyContent: "flex-start", paddingTop: 6 }}
         showsVerticalScrollIndicator={false}
       >
         {/* Fila de sets */}

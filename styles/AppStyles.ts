@@ -3,6 +3,8 @@ import { AppTheme } from "./theme";
 
 const { width, height } = Dimensions.get("window");
 const scaleHeight = height / 800;
+const sponsorLogoHeight = 56 * scaleHeight;
+const sponsorBarHeight = sponsorLogoHeight + 12 * scaleHeight; // paddingVertical * 2 (6*2)
 
 export const AppStyles = StyleSheet.create({
   background: {
@@ -18,6 +20,8 @@ export const AppStyles = StyleSheet.create({
     alignItems: "center",
     width: "100%",
     paddingHorizontal: 20,
+    paddingTop: 20 * scaleHeight,
+    paddingBottom: 20 * scaleHeight,
     minHeight: height, 
   },
 
@@ -28,7 +32,8 @@ export const AppStyles = StyleSheet.create({
     paddingVertical: 20 * scaleHeight,
     paddingHorizontal: 20,
     alignItems: "center",
-    justifyContent: "center", // 🔹 centra contenido interno
+    justifyContent: "center",
+    alignSelf: "center",
     opacity: 0.95,
 
     shadowColor: "#000",
@@ -40,10 +45,71 @@ export const AppStyles = StyleSheet.create({
 
   logoHeader: {
     alignSelf: "center",
-    width: "100%",
-    height: 60 * scaleHeight,
+    width: Math.min(280, width * 0.85),
+    height: 150 * scaleHeight,
     resizeMode: "contain",
-    marginBottom: 16,
+    marginBottom: 16 * scaleHeight,
+  },
+  sponsorLogo: {
+    alignSelf: "center",
+    width: Math.min(280, width * 0.85),
+    height: sponsorLogoHeight,
+    marginTop: 0,
+    marginBottom: 0,
+    opacity: 0.95,
+  },
+
+  sponsorBar: {
+    position: "absolute",
+    top: 6 * scaleHeight,
+    left: 0,
+    right: 0,
+    alignItems: "center",
+    justifyContent: "center",
+    zIndex: 30,
+    height: sponsorBarHeight,
+    paddingVertical: 6 * scaleHeight,
+    backgroundColor: "transparent",
+  },
+
+  sponsorBelow: {
+    width: Math.min(280, width * 0.85),
+    alignSelf: "center",
+    marginTop: 12 * scaleHeight,
+    marginBottom: 8 * scaleHeight,
+    alignItems: "center",
+  },
+
+  headerZone: {
+    width: "100%",
+    flex: 0.35,
+    justifyContent: "flex-end",
+    alignItems: "center",
+  },
+
+  cardZone: {
+    width: "100%",
+    flex: 0.65,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  cardCornerLeft: {
+    position: "absolute",
+    top: 12 * scaleHeight,
+    left: 10,
+    width: 72,
+    height: sponsorLogoHeight,
+    resizeMode: "contain",
+    zIndex: 40,
+  },
+
+  cardCornerRight: {
+    position: "absolute",
+    width: 72,
+    height: sponsorLogoHeight,
+    resizeMode: "contain",
+    zIndex: 40,
   },
 
   logo: {

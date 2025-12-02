@@ -25,6 +25,9 @@ const isLargeScreen = width > 600; // lo dejamos por si lo usas en otros cálcul
 // 🔹 Tamaños principales (con máximos y ajuste)
 const campoSize = Math.min(width * 0.82, height * 0.45, 420) * scale;
 const posicionSize = campoSize * 0.26 * scale;
+// Tamaño del logo dentro del control (calculado a partir de campoSize)
+const headerLogoWidth = Math.min(campoSize * 0.9, 320);
+const headerLogoHeight = Math.min(headerLogoWidth * 0.28, 80);
 
 export const EntrenadorStyles = StyleSheet.create({
   container: {
@@ -32,6 +35,25 @@ export const EntrenadorStyles = StyleSheet.create({
     backgroundColor: AppTheme.background,
     alignItems: "center",
     marginTop:10
+  },
+
+  headerLogo: {
+    width: campoSize * 0.6,
+    height: 60 * scale,
+    resizeMode: "contain",
+    alignSelf: "center",
+    marginVertical: 8 * scale,
+  },
+  headerLogoControl: {
+    position: "absolute",
+    left: (campoSize - headerLogoWidth) / 2,
+    top: "80%",
+    width: headerLogoWidth,
+    height: headerLogoHeight,
+    resizeMode: "contain",
+    opacity: 0.09,
+    zIndex: 0,
+    transform: [{ translateY: -headerLogoHeight / 2 }],
   },
 
   campo: {
@@ -139,12 +161,15 @@ posicion: {
     shadowOpacity: 0.05,
     shadowRadius: 2,
     elevation: 1,
+    position: "relative",
+    overflow: "hidden",
   },
 
   controlItem: {
     flex: 1,
     alignItems: "center",
     minWidth: width * 0.2 * scale,
+    zIndex: 1,
   },
 
   controlLabel: {

@@ -174,6 +174,11 @@ export default function EntrenadorView() {
           <View style={styles.container}>
             {/* Barra superior */}
             <View style={styles.barraControl}>
+              <Image
+                source={require("../assets/LOGO_LETRAS.png")}
+                style={styles.headerLogoControl}
+                resizeMode="contain"
+              />
               <View style={styles.controlItem}>
                 <Text style={styles.controlLabel} numberOfLines={1} ellipsizeMode="tail">
                   Código

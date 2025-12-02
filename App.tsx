@@ -22,15 +22,23 @@ function HomeScreen({ navigation }: any) {
       source={require("./assets/fondo.jpeg")}
       style={AppStyles.background}
     >
+      {/* sponsor moved below the main container (see below) */}
+      
       <View style={AppStyles.overlay}>
-        {/* Logo pegado al borde superior interno del Card */}
-  <Image
-    source={require("./assets/logo_fvbpa.png")}
-    style={AppStyles.logoHeader}
-    resizeMode="contain"
-  />
-<Card style={AppStyles.card} mode="elevated">
-  <Card.Content style={AppStyles.cardContent}>
+        {/* Logo principal encima del contenedor */}
+        <Image
+          source={require("./assets/LogoBalear.jpg")}
+          style={AppStyles.logoHeader}
+          resizeMode="contain"
+        />
+        
+        <Card style={AppStyles.card} mode="elevated">
+          <Image
+            source={require("./assets/LOGO_BALEAR2.png")}
+            style={AppStyles.cardCornerRight}
+            resizeMode="contain"
+          />
+          <Card.Content style={AppStyles.cardContent}>
     <Image
       source={require("./assets/258.png")}
       style={AppStyles.logo}
@@ -66,8 +74,17 @@ function HomeScreen({ navigation }: any) {
       </View>
       <Text style={AppStyles.actionArrow}>›</Text>
     </TouchableOpacity>
-  </Card.Content>
-</Card>
+          </Card.Content>
+        </Card>
+
+        {/* Sponsor logo below the main container */}
+        <View style={AppStyles.sponsorBelow}>
+          <Image
+            source={require("./assets/LogoPatrocinio.jpg")}
+            style={AppStyles.sponsorLogo}
+            resizeMode="contain"
+          />
+        </View>
 
         {/* 🔹 Marca de CopyRight */}
         <Text style={AppStyles.copyright}>
