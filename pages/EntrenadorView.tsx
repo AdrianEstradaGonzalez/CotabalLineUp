@@ -214,7 +214,7 @@ export default function EntrenadorView() {
                 <Image source={icons.left} style={{ width: 20, height: 20, tintColor: "#fff" }} />
               </TouchableOpacity>
               <View style={styles.setDisplay}>
-                <Text style={styles.setText}>{`Set ${setActual}`}</Text>
+                <Text style={styles.setText}>{`SET ${setActual}`}</Text>
               </View>
               <TouchableOpacity
                 onPress={() => setSetActual(Math.min(TOTAL_SETS, setActual + 1))}
@@ -279,7 +279,7 @@ export default function EntrenadorView() {
                 source={icons.qr}
                 style={{ width: 32, height: 32, tintColor: "#fff", marginBottom: 6 }}
               />
-              <Text style={styles.qrButtonText}>Generar Código QR</Text>
+              <Text style={styles.qrButtonText}>GENERAR CÓDIGO QR</Text>
             </TouchableOpacity>
           </View>
         </View>

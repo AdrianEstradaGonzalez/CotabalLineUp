@@ -22,12 +22,18 @@ function HomeScreen({ navigation }: any) {
       source={require("./assets/fondo.jpeg")}
       style={AppStyles.background}
     >
+      {/* Absolute top-right logo */}
+      <Image
+        source={require("./assets/LOGO_LETRAS.png")}
+        style={AppStyles.topRightLogo}
+        resizeMode="contain"
+      />
       {/* sponsor moved below the main container (see below) */}
       
       <View style={AppStyles.overlay}>
         {/* Logo principal encima del contenedor */}
         <Image
-          source={require("./assets/LogoBalear.jpg")}
+          source={require("./assets/HEADER_BALEAR.png")}
           style={AppStyles.logoHeader}
           resizeMode="contain"
         />

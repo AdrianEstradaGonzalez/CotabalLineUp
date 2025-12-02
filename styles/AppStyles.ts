@@ -45,10 +45,9 @@ export const AppStyles = StyleSheet.create({
 
   logoHeader: {
     alignSelf: "center",
-    width: Math.min(280, width * 0.85),
+    width: '100%',
     height: 150 * scaleHeight,
     resizeMode: "contain",
-    marginBottom: 16 * scaleHeight,
   },
   sponsorLogo: {
     alignSelf: "center",
@@ -110,6 +109,16 @@ export const AppStyles = StyleSheet.create({
     height: sponsorLogoHeight,
     resizeMode: "contain",
     zIndex: 40,
+  },
+
+  topRightLogo: {
+    position: "absolute",
+    top: 8 * scaleHeight,
+    textAlign: "right",
+    width: Math.min(120, width * 0.50),
+    height: 100 * scaleHeight,
+    resizeMode: "contain",
+    zIndex: 50,
   },
 
   logo: {

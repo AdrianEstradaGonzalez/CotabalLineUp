@@ -69,7 +69,7 @@ export default function MedioCampoView({
       {/* Contenido scrollable */}
       <View style={{ flex: 1, alignItems: "center", justifyContent: "center", padding: 16 }}>
         <View style={styles.tituloBox}>
-          <Text style={styles.tituloPrincipal}>Hoja de Rotaciones</Text>
+          <Text style={styles.tituloPrincipal}>HOJA DE ROTACIONES</Text>
           <Text style={styles.tituloSecundario}>SET {setActual}</Text>
         </View>
 
@@ -121,7 +121,7 @@ export default function MedioCampoView({
             source={icons.qr}
             style={{ width: 32, height: 32, tintColor: "#fff", marginBottom: 6 }}
           />
-          <Text style={styles.qrButtonText}>{`Escanear\nEquipo ${equipo}`}</Text>
+          <Text style={styles.qrButtonText}>{`ESCANEAR\nEQUIPO ${equipo}`}</Text>
         </TouchableOpacity>
       </View>
 

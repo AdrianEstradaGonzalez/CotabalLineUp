@@ -147,7 +147,7 @@ if ((modo === "6x6" && setActual === 5) || (modo === "4x4" && setActual === 3)) 
             />
           </TouchableOpacity>
           <View style={styles.setDisplay}>
-            <Text style={styles.setText}>{`Set ${setActual}`}</Text>
+            <Text style={styles.setText}>{`SET ${setActual}`}</Text>
           </View>
           <TouchableOpacity onPress={avanzarSet} style={styles.setButton}>
             <Image
@@ -318,7 +318,7 @@ if ((modo === "6x6" && setActual === 5) || (modo === "4x4" && setActual === 3)) 
             onPress={() => onEscanear?.(equipoIzq)}
           >
             <Image source={icons.qr} style={styles.qrIcon} />
-            <Text style={styles.qrButtonText}>{`Escanear\nEquipo ${equipoIzq}`}</Text>
+            <Text style={styles.qrButtonText}>{`ESCANEAR\nEQUIPO ${equipoIzq}`}</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
@@ -326,7 +326,7 @@ if ((modo === "6x6" && setActual === 5) || (modo === "4x4" && setActual === 3)) 
             onPress={() => onEscanear?.(equipoDer)}
           >
             <Image source={icons.qr} style={styles.qrIcon} />
-            <Text style={styles.qrButtonText}>{`Escanear\nEquipo ${equipoDer}`}</Text>
+            <Text style={styles.qrButtonText}>{`ESCANEAR\nEQUIPO ${equipoDer}`}</Text>
           </TouchableOpacity>
         </View>
       </ScrollView>

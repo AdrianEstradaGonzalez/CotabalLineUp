@@ -51,7 +51,7 @@ export default function NavBar({ modo, toggleModo }: NavBarProps) {
       >
         
         <Text style={{ color: "#fff", fontSize: 16, fontWeight: "600", marginRight: 5 }}>
-          {modo === "6x6" ? "Voleibol 6x6" : "MiniVoley 4x4"}
+          {modo === "6x6" ? "VOLEIBOL 6x6" : "MINIVOLEY 4x4"}
         </Text>
         <Image
           source={icons.swap}
