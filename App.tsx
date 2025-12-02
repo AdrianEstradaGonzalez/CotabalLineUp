@@ -33,11 +33,6 @@ function HomeScreen({ navigation }: any) {
         />
         
         <Card style={AppStyles.card} mode="elevated">
-          <Image
-            source={require("./assets/LOGO_BALEAR2.png")}
-            style={AppStyles.cardCornerRight}
-            resizeMode="contain"
-          />
           <Card.Content style={AppStyles.cardContent}>
     <Image
       source={require("./assets/258.png")}

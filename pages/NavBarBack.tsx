@@ -29,20 +29,81 @@ export default function NavBarBack({ onBack, isLeft }: NavBarBackProps) {
         shadowOpacity: 0.15,
         shadowRadius: 2,
         elevation: 3,
-        justifyContent: isLeft ? "flex-start" : "flex-end",
+        justifyContent: "space-between",
       }}
     >
-      <TouchableOpacity onPress={onBack}>
-        <Image
-          source={icons.back}
+      {isLeft && (
+        <TouchableOpacity onPress={onBack}>
+          <Image
+            source={icons.back}
+            style={{
+              width: 28,
+              height: 28,
+              tintColor: "#fff",
+            }}
+          />
+        </TouchableOpacity>
+      )}
+      
+      {isLeft && (
+        <View
           style={{
             width: 28,
             height: 28,
-            tintColor: "#fff",
-            transform: [{ scaleX: isLeft ? 1 : -1 }], // invertir flecha si es derecha
+            borderRadius: 14,
+            overflow: "hidden",
+            backgroundColor: "#fff",
+            justifyContent: "center",
+            alignItems: "center",
           }}
-        />
-      </TouchableOpacity>
+        >
+          <Image
+            source={require("../assets/LOGO_BALEAR2.jpg")}
+            style={{
+              width: 28,
+              height: 28,
+              resizeMode: "cover",
+            }}
+          />
+        </View>
+      )}
+
+      {!isLeft && (
+        <View
+          style={{
+            width: 28,
+            height: 28,
+            borderRadius: 14,
+            overflow: "hidden",
+            backgroundColor: "#fff",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Image
+            source={require("../assets/LOGO_BALEAR2.jpg")}
+            style={{
+              width: 28,
+              height: 28,
+              resizeMode: "cover",
+            }}
+          />
+        </View>
+      )}
+      
+      {!isLeft && (
+        <TouchableOpacity onPress={onBack}>
+          <Image
+            source={icons.back}
+            style={{
+              width: 28,
+              height: 28,
+              tintColor: "#fff",
+              transform: [{ scaleX: -1 }],
+            }}
+          />
+        </TouchableOpacity>
+      )}
     </View>
   );
 }

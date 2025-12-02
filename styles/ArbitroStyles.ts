@@ -65,7 +65,7 @@ export const ArbitroStyles = StyleSheet.create({
   red: {
   width: 6 * scale,               // 👉 más gruesa para consistencia
   alignSelf: "stretch",
-  backgroundColor: AppTheme.fieldLine,
+  backgroundColor: AppTheme.shadow,
   marginHorizontal: 6 * scale,    // 👉 más separación entre los lados
   borderRadius: 2 * scale,        // 👉 bordes redondeados para un look más limpio
   elevation: 3,                   // 👉 pequeña sombra en Android
