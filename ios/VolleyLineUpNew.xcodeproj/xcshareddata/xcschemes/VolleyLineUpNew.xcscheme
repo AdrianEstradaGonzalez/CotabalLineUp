@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "AlignMe.app"
-               BlueprintName = "AlignMe"
-               ReferencedContainer = "container:AlignMe.xcodeproj">
+               BuildableName = "CotabalLineUp.app"
+               BlueprintName = "CotabalLineUp"
+               ReferencedContainer = "container:CotabalLineUp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "AlignMeTests.xctest"
-               BlueprintName = "AlignMeTests"
-               ReferencedContainer = "container:AlignMe.xcodeproj">
+               BuildableName = "CotabalLineUpTests.xctest"
+               BlueprintName = "CotabalLineUpTests"
+               ReferencedContainer = "container:CotabalLineUp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AlignMe.app"
-            BlueprintName = "AlignMe"
-            ReferencedContainer = "container:AlignMe.xcodeproj">
+            BuildableName = "CotabalLineUp.app"
+            BlueprintName = "CotabalLineUp"
+            ReferencedContainer = "container:CotabalLineUp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "AlignMe.app"
-            BlueprintName = "AlignMe"
-            ReferencedContainer = "container:AlignMe.xcodeproj">
+            BuildableName = "CotabalLineUp.app"
+            BlueprintName = "CotabalLineUp"
+            ReferencedContainer = "container:CotabalLineUp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
